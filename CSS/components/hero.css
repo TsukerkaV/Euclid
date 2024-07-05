@@ -1,0 +1,118 @@
+.hero{
+  margin-bottom: 50px;
+}
+.hero__container{
+    position: relative;
+    border-radius: 32px;
+    overflow: hidden;
+}
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 80px;
+    color: var(--white);
+    background-image: url(../../Img/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.hero__title{
+    max-width: 837px;
+    font-size: 70px ;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+.hero__descr{
+    margin-bottom: 90px;
+    max-width: 790px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+.hero__btn{
+    padding: 25px 39px;
+    font-size: 23px;
+}
+@media(max-width: 1200px){
+  .hero{
+    margin-bottom: 37px;
+  }
+
+  .hero__content{
+    padding: 160px 77px;
+    background-image: url(../../Img/hero__1024.jpg);
+
+  }
+  .hero__title{
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
+  .hero__descr{
+    font-size: 20px;
+    margin-bottom: 60px;
+    line-height: normal;
+  }
+  .hero__btn{
+    padding: 25px 35px;
+    font-size: 24px;
+}
+}
+@media(max-width: 992px){
+  .hero__container{
+    border-radius: 24px;
+  }
+  .hero__content{
+    padding: 159px 40px;
+    background-position: center center;
+    background-image: url(../../Img/hero__768.png);
+    min-height: 662px;
+
+  }
+  .hero__title{
+    font-size: 50px;
+  }
+  .hero__descr{
+    font-size: 18px;
+
+  }
+  .hero__btn{
+    padding: 25px 39px;
+    font-size: 23px;
+  }
+
+}
+@media(max-width: 576px){
+  .hero{
+    margin-bottom: 58px;
+  }
+  .hero__container{
+    border-radius: 16px;
+  }
+  .hero__content{
+    min-height: 308px;
+    padding: 60px 22px;
+    align-items: center;
+    background-size: cover;
+    height: 308px;
+  }
+  .hero__title{
+    font-size: 20px;
+    text-align: center;
+    line-height:normal;
+    margin-bottom: 6px;
+  }
+  .hero__descr{
+    font-size: 12px;
+    line-height:normal;
+    text-align: center;
+    margin-bottom: 32px;
+
+  }
+  .hero__btn{
+    padding: 13px 29px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+}

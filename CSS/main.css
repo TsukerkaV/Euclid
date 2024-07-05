@@ -1,0 +1,116 @@
+/* main */
+@import url(normalize.css);
+@import url(variables.css);
+@import url(fonts.css);
+
+
+
+/* components */
+@import url(components/header.css);
+@import url(components/hero.css);
+@import url(components/about.css);
+@import url(components/steps.css);
+@import url(components/questions.css);
+@import url(components/footer.css);
+
+/* other */
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after{
+    box-sizing: inherit;
+  }
+  a{
+      color: inherit;
+      text-decoration: none;
+  }
+  img{
+      max-width: 100%;
+  }
+body{
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat';
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;
+  }
+.container{
+    margin: auto;
+    padding: 0 75px;
+    width: 100%;
+    max-width: 1920px;
+}
+.section-offset{
+    margin-bottom: 50px;
+}
+.list-reset{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.btn-reset{
+    background-color: transparent;
+    cursor: pointer;
+}
+.title{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+}
+.btn{
+    border:none;
+    border-radius: 16px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    width: fit-content;
+    transition: background-color 0.3s ease-in-out ;
+}
+.btn:focus{
+    background-color: var(--orange-hover);
+
+}
+.btn:hover{
+    background-color: var(--orange-hover);
+
+}
+.btn:active{
+    background-color: var(--orange-active);
+
+}
+.btn:focus-visible{
+    outline: none;
+}
+@media(max-width: 1200px){
+  .container{
+    padding: 0 50px;
+  }
+  .section-offset{
+    margin-bottom: 40px;
+}
+
+}
+@media(max-width: 576px){
+
+  .container{
+    padding: 0 15px;
+  }
+  .title{
+    font-size: 24px;
+  }
+  .btn{
+    border-radius: 8px;
+  }
+  .section-offset{
+    margin-bottom: 20px;
+}
+
+
+}
+
